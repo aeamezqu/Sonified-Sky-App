@@ -11,6 +11,11 @@
 		18D775C522AD944300AE281E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D775C422AD944300AE281E /* ContentView.swift */; };
 		18D775C722AD944400AE281E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D775C622AD944400AE281E /* Assets.xcassets */; };
 		18D775D822AD963800AE281E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D775DA22AD963800AE281E /* LaunchScreen.storyboard */; };
+		2101771427E8F6E600C37F34 /* MyScene.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 2101771327E8F6E600C37F34 /* MyScene.rcproject */; };
+		2101771827E91FA600C37F34 /* Constellations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2101771727E91FA600C37F34 /* Constellations.swift */; };
+		2101771A27E92D5000C37F34 /* Constellations+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2101771927E92D5000C37F34 /* Constellations+Info.swift */; };
+		2101771E27EBAE0E00C37F34 /* stars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2101771D27EBAE0E00C37F34 /* stars.swift */; };
+		2101772027EBAF5400C37F34 /* star_catalogue.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2101771F27EBAF5400C37F34 /* star_catalogue.csv */; };
 		2189A43F27A36DFA0013AD3C /* Solar Scene.scn in Resources */ = {isa = PBXBuildFile; fileRef = 2189A43E27A36DFA0013AD3C /* Solar Scene.scn */; };
 		8327D603264431B200CE7691 /* Planet+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8327D602264431B200CE7691 /* Planet+Info.swift */; };
 		8327D605264435B600CE7691 /* PlanetInfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8327D604264435B600CE7691 /* PlanetInfoRow.swift */; };
@@ -28,6 +33,12 @@
 		18D775C622AD944400AE281E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18D775CE22AD944400AE281E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18D775DE22AD96B400AE281E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2101771327E8F6E600C37F34 /* MyScene.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = MyScene.rcproject; sourceTree = "<group>"; };
+		2101771727E91FA600C37F34 /* Constellations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constellations.swift; sourceTree = "<group>"; };
+		2101771927E92D5000C37F34 /* Constellations+Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constellations+Info.swift"; sourceTree = "<group>"; };
+		2101771C27E93CD600C37F34 /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
+		2101771D27EBAE0E00C37F34 /* stars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stars.swift; sourceTree = "<group>"; };
+		2101771F27EBAF5400C37F34 /* star_catalogue.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = star_catalogue.csv; sourceTree = "<group>"; };
 		2189A43E27A36DFA0013AD3C /* Solar Scene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Solar Scene.scn"; sourceTree = "<group>"; };
 		8327D602264431B200CE7691 /* Planet+Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Planet+Info.swift"; sourceTree = "<group>"; };
 		8327D604264435B600CE7691 /* PlanetInfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetInfoRow.swift; sourceTree = "<group>"; };
@@ -53,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				2189A43E27A36DFA0013AD3C /* Solar Scene.scn */,
+				2101771C27E93CD600C37F34 /* Location.gpx */,
 				18D775BF22AD944300AE281E /* SolarScenes */,
 				18D775BE22AD944300AE281E /* Products */,
 			);
@@ -76,6 +88,7 @@
 				1839F4AF25190F2A00BB00F1 /* AppMain.swift */,
 				18D775C422AD944300AE281E /* ContentView.swift */,
 				832C195F2643EAE500E2092F /* ViewModel.swift */,
+				2101771327E8F6E600C37F34 /* MyScene.rcproject */,
 				18D775C622AD944400AE281E /* Assets.xcassets */,
 				18D775DA22AD963800AE281E /* LaunchScreen.storyboard */,
 				18D775CE22AD944400AE281E /* Info.plist */,
@@ -97,8 +110,12 @@
 		8327D60726452EAF00CE7691 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
+				2101771F27EBAF5400C37F34 /* star_catalogue.csv */,
 				832C19612643EAFE00E2092F /* Planet.swift */,
 				8327D602264431B200CE7691 /* Planet+Info.swift */,
+				2101771727E91FA600C37F34 /* Constellations.swift */,
+				2101771D27EBAE0E00C37F34 /* stars.swift */,
+				2101771927E92D5000C37F34 /* Constellations+Info.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -168,6 +185,7 @@
 			files = (
 				2189A43F27A36DFA0013AD3C /* Solar Scene.scn in Resources */,
 				18D775D822AD963800AE281E /* LaunchScreen.storyboard in Resources */,
+				2101772027EBAF5400C37F34 /* star_catalogue.csv in Resources */,
 				18D775C722AD944400AE281E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,14 +219,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				18D775C522AD944300AE281E /* ContentView.swift in Sources */,
+				2101771A27E92D5000C37F34 /* Constellations+Info.swift in Sources */,
 				1839F4B025190F2A00BB00F1 /* AppMain.swift in Sources */,
 				832C19582643D94900E2092F /* ColorPalette.swift in Sources */,
 				8327D605264435B600CE7691 /* PlanetInfoRow.swift in Sources */,
 				832C195C2643DB3100E2092F /* ProgressViewWithBackgroundStyle.swift in Sources */,
+				2101771827E91FA600C37F34 /* Constellations.swift in Sources */,
 				832C19622643EAFE00E2092F /* Planet.swift in Sources */,
 				832C19602643EAE500E2092F /* ViewModel.swift in Sources */,
 				832C195A2643D99400E2092F /* SolarButtonStyle.swift in Sources */,
+				2101771E27EBAE0E00C37F34 /* stars.swift in Sources */,
 				8327D603264431B200CE7691 /* Planet+Info.swift in Sources */,
+				2101771427E8F6E600C37F34 /* MyScene.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

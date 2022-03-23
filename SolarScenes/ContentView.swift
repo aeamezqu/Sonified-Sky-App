@@ -143,7 +143,7 @@ struct ContentView: View {
       cameraNode?.constraints = [constraint]
       // 3
       let globalPosition = planetNode
-        .convertPosition(SCNVector3(x: 50, y: 10, z: 0), to: nil)
+        .convertPosition(SCNVector3(x: 75, y: 25, z: 0), to: nil)
       // 4
       let move = SCNAction.move(to: globalPosition, duration: 1.0)
       cameraNode?.runAction(move)
