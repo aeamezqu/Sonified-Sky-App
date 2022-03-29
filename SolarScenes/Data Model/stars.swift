@@ -32,7 +32,7 @@
 
 import Foundation
 
-struct stars_coordinates {
+struct stars_coordinates: Identifiable {
   var ra: String = ""
   var dec: String = ""
   var type: String = ""
@@ -41,7 +41,7 @@ struct stars_coordinates {
   var name: String = ""
   var rarad: String = ""
   var decrad: String = ""
-  var id: String = ""
+  var ID: String = ""
   var r1: String = ""
   var r2: String = ""
   var angle: String = ""
@@ -53,6 +53,7 @@ struct stars_coordinates {
   var dupid: String = ""
   var dupcat: String = ""
   var displayMag: String = ""
+  var id = UUID()
   
   init(raw: [String]) {
     ra = raw[0]
@@ -89,13 +90,17 @@ func loadCSV(from csvName: String) -> [stars_coordinates] {
   var rows = data.components(separatedBy: "\n")
   
   //remove hedeaer rows
+  //count the number of header columns before removing
+  let columnCount  = rows.first?.components(separatedBy: ",").count
   rows.removeFirst()
   
   //now loop around each row and split into columns
   for row in rows {
     let csvColumns = row.components(separatedBy: ",")
-    let stars_coordinatesStruct = stars_coordinates.init(raw: csvColumns)
-    csvToStruct.append(stars_coordinatesStruct)
+    if csvColumns.count == columnCount {
+       let stars_coordinatesStruct = stars_coordinates.init(raw: csvColumns)
+       csvToStruct.append(stars_coordinatesStruct)
+    }
   }
   
   return csvToStruct

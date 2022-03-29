@@ -33,9 +33,11 @@
 import SwiftUI
 import SceneKit
 import RealityKit
+import ARKit
 
 
 struct ContentView: View {
+ 
   @ObservedObject var viewModel = ViewModel()
   
   // 1
@@ -72,10 +74,16 @@ struct ContentView: View {
 
   // 2
   var scene = makeScene()
+ 
   
+  // Add csv file of stars
+  var star_catalogue = loadCSV(from: "star_catalogue")
 
-
+  //Star navigation list
   var body: some View {
+   
+   
+    
     ZStack {
       SceneView(
         // 1
@@ -157,6 +165,20 @@ struct ContentView: View {
 
 }
 
+
+struct ARViewContainer:
+  UIViewRepresentable {
+  
+  func makeUIView(context: Context) ->  ARView {
+    let arView = ARView(frame: .zero)
+    
+    return arView
+  }
+  
+  func updateUIView(_ uiView: ARView, context: Context) {}
+  
+}
+
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     Group {
@@ -168,3 +190,5 @@ struct ContentView_Previews: PreviewProvider {
     }
   }
 }
+
+
