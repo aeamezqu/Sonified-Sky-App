@@ -81,7 +81,8 @@ struct ContentView: View {
 
   //Star navigation list
   var body: some View {
-   
+   ARViewContainer()
+      .edgesIgnoringSafeArea(.all)
    
     
     ZStack {
