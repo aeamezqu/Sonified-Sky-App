@@ -28,7 +28,7 @@
 
 /* Begin PBXFileReference section */
 		1839F4AF25190F2A00BB00F1 /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
-		18D775BD22AD944300AE281E /* Solar Scenes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Solar Scenes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18D775BD22AD944300AE281E /* Sonified Sky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sonified Sky.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D775C422AD944300AE281E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		18D775C622AD944400AE281E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18D775CE22AD944400AE281E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 		18D775BE22AD944300AE281E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				18D775BD22AD944300AE281E /* Solar Scenes.app */,
+				18D775BD22AD944300AE281E /* Sonified Sky.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,9 +123,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		18D775BC22AD944300AE281E /* Solar Scenes */ = {
+		18D775BC22AD944300AE281E /* Sonified Sky */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18D775D122AD944400AE281E /* Build configuration list for PBXNativeTarget "Solar Scenes" */;
+			buildConfigurationList = 18D775D122AD944400AE281E /* Build configuration list for PBXNativeTarget "Sonified Sky" */;
 			buildPhases = (
 				181FE31D248EA6C900A180EA /* SwiftLint */,
 				18D775B922AD944300AE281E /* Sources */,
@@ -136,11 +136,11 @@
 			);
 			dependencies = (
 			);
-			name = "Solar Scenes";
+			name = "Sonified Sky";
 			packageProductDependencies = (
 			);
 			productName = MyRWTutorial;
-			productReference = 18D775BD22AD944300AE281E /* Solar Scenes.app */;
+			productReference = 18D775BD22AD944300AE281E /* Sonified Sky.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -158,7 +158,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 18D775B822AD944300AE281E /* Build configuration list for PBXProject "SolarScenes" */;
+			buildConfigurationList = 18D775B822AD944300AE281E /* Build configuration list for PBXProject "Sonified Sky" */;
 			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -173,7 +173,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				18D775BC22AD944300AE281E /* Solar Scenes */,
+				18D775BC22AD944300AE281E /* Sonified Sky */,
 			);
 		};
 /* End PBXProject section */
@@ -409,7 +409,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		18D775B822AD944300AE281E /* Build configuration list for PBXProject "SolarScenes" */ = {
+		18D775B822AD944300AE281E /* Build configuration list for PBXProject "Sonified Sky" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18D775CF22AD944400AE281E /* Debug */,
@@ -418,7 +418,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		18D775D122AD944400AE281E /* Build configuration list for PBXNativeTarget "Solar Scenes" */ = {
+		18D775D122AD944400AE281E /* Build configuration list for PBXNativeTarget "Sonified Sky" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				18D775D222AD944400AE281E /* Debug */,

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "18D775BC22AD944300AE281E"
-               BuildableName = "Solar Scenes.app"
-               BlueprintName = "Solar Scenes"
-               ReferencedContainer = "container:SolarScenes.xcodeproj">
+               BuildableName = "Sonified Sky.app"
+               BlueprintName = "Sonified Sky"
+               ReferencedContainer = "container:Sonified Sky.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "18D775BC22AD944300AE281E"
-            BuildableName = "Solar Scenes.app"
-            BlueprintName = "Solar Scenes"
-            ReferencedContainer = "container:SolarScenes.xcodeproj">
+            BuildableName = "Sonified Sky.app"
+            BlueprintName = "Sonified Sky"
+            ReferencedContainer = "container:Sonified Sky.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <LocationScenarioReference
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "18D775BC22AD944300AE281E"
-            BuildableName = "Solar Scenes.app"
-            BlueprintName = "Solar Scenes"
-            ReferencedContainer = "container:SolarScenes.xcodeproj">
+            BuildableName = "Sonified Sky.app"
+            BlueprintName = "Sonified Sky"
+            ReferencedContainer = "container:Sonified Sky.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

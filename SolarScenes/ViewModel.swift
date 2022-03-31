@@ -31,9 +31,12 @@
 /// THE SOFTWARE.
 
 import Foundation
+import UIKit
+import SceneKit
 
 class ViewModel: NSObject, ObservableObject {
   @Published var selectedPlanet: Planet?
+  
 
   var title: String {
     selectedPlanet?.name ?? ""

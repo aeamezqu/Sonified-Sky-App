@@ -40,8 +40,12 @@ struct ContentView: View {
  
   @ObservedObject var viewModel = ViewModel()
   
+  
+  
   // 1
   static func makeScene() -> SCNScene? {
+    
+    
     let scene = SCNScene(named: "Solar Scene.scn")
     applyTextures(to: scene)
     // 1
@@ -51,8 +55,12 @@ struct ContentView: View {
 
 
     return scene
+    
+    
   }
   static func applyTextures(to scene: SCNScene?) {
+    
+    
     // 1
     for planet in Planet.allCases {
       // 2
@@ -68,12 +76,16 @@ struct ContentView: View {
       // 5
       node?.geometry?.firstMaterial?.diffuse.contents = texture
       
+      
+      
     }
   }
 
 
   // 2
   var scene = makeScene()
+  
+  
  
   
   // Add csv file of stars
@@ -81,31 +93,45 @@ struct ContentView: View {
 
   //Star navigation list
   var body: some View {
-   ARViewContainer()
-      .edgesIgnoringSafeArea(.all)
+   
+   
    
     
     ZStack {
+      ARViewContainer()
+        
       SceneView(
+        
         // 1
         scene: scene,
         // 2
         pointOfView: setUpCamera(planet: viewModel.selectedPlanet),
         // 3
         options: viewModel.selectedPlanet == nil ? [.allowsCameraControl] : []
+        
 
       )
       // 4
+      
       .background(ColorPalette.secondary)
       .edgesIgnoringSafeArea(.all)
+      
+      // Pacing ARViewContaiainer here works but not for model
+      ARViewContainer()
+  
+        
 
 
       VStack {
+       
+        
         if let planet = viewModel.selectedPlanet {
           VStack {
             PlanetInfoRow(title: "Length of year", value: planet.yearLength)
             PlanetInfoRow(title: "Number of moons", value: "\(planet.moonCount)")
             PlanetInfoRow(title: "Namesake", value: planet.namesake)
+            
+            
           }
           .padding(8)
           .background(ColorPalette.primary)
@@ -114,7 +140,7 @@ struct ContentView: View {
         }
 
         Spacer()
-
+        
         HStack {
           HStack {
             Button(action: viewModel.selectPreviousPlanet) {
@@ -122,6 +148,8 @@ struct ContentView: View {
             }
             Button(action: viewModel.selectNextPlanet) {
               Image(systemName: "arrow.forward.circle.fill")
+              
+              
             }
           }
 
@@ -132,6 +160,7 @@ struct ContentView: View {
           if viewModel.selectedPlanet != nil {
             Button(action: viewModel.clearSelection) {
               Image(systemName: "xmark.circle.fill")
+              
             }
           }
         }
@@ -139,6 +168,7 @@ struct ContentView: View {
         .background(ColorPalette.primary)
         .cornerRadius(14)
         .padding(12)
+        
       }
     }
   }
@@ -162,6 +192,7 @@ struct ContentView: View {
   }
   func planetNode(planet: Planet) -> SCNNode? {
     scene?.rootNode.childNode(withName: planet.rawValue, recursively: false)
+    
   }
 
 }
@@ -182,6 +213,7 @@ struct ARViewContainer:
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
+    
     Group {
       ContentView()
       ContentView()
