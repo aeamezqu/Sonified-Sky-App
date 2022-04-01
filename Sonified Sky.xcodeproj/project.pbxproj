@@ -15,7 +15,7 @@
 		2101771827E91FA600C37F34 /* Constellations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2101771727E91FA600C37F34 /* Constellations.swift */; };
 		2101771A27E92D5000C37F34 /* Constellations+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2101771927E92D5000C37F34 /* Constellations+Info.swift */; };
 		2101771E27EBAE0E00C37F34 /* stars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2101771D27EBAE0E00C37F34 /* stars.swift */; };
-		2101772027EBAF5400C37F34 /* star_catalogue.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2101771F27EBAF5400C37F34 /* star_catalogue.csv */; };
+		21205ED127F7893A00E3C933 /* stardata.csv in Resources */ = {isa = PBXBuildFile; fileRef = 21205ED027F7893A00E3C933 /* stardata.csv */; };
 		2189A43F27A36DFA0013AD3C /* Solar Scene.scn in Resources */ = {isa = PBXBuildFile; fileRef = 2189A43E27A36DFA0013AD3C /* Solar Scene.scn */; };
 		8327D603264431B200CE7691 /* Planet+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8327D602264431B200CE7691 /* Planet+Info.swift */; };
 		8327D605264435B600CE7691 /* PlanetInfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8327D604264435B600CE7691 /* PlanetInfoRow.swift */; };
@@ -38,7 +38,7 @@
 		2101771927E92D5000C37F34 /* Constellations+Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constellations+Info.swift"; sourceTree = "<group>"; };
 		2101771C27E93CD600C37F34 /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		2101771D27EBAE0E00C37F34 /* stars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stars.swift; sourceTree = "<group>"; };
-		2101771F27EBAF5400C37F34 /* star_catalogue.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = star_catalogue.csv; sourceTree = "<group>"; };
+		21205ED027F7893A00E3C933 /* stardata.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stardata.csv; sourceTree = "<group>"; };
 		2189A43E27A36DFA0013AD3C /* Solar Scene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "Solar Scene.scn"; sourceTree = "<group>"; };
 		8327D602264431B200CE7691 /* Planet+Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Planet+Info.swift"; sourceTree = "<group>"; };
 		8327D604264435B600CE7691 /* PlanetInfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetInfoRow.swift; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 		8327D60726452EAF00CE7691 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				2101771F27EBAF5400C37F34 /* star_catalogue.csv */,
+				21205ED027F7893A00E3C933 /* stardata.csv */,
 				832C19612643EAFE00E2092F /* Planet.swift */,
 				8327D602264431B200CE7691 /* Planet+Info.swift */,
 				2101771727E91FA600C37F34 /* Constellations.swift */,
@@ -185,7 +185,7 @@
 			files = (
 				2189A43F27A36DFA0013AD3C /* Solar Scene.scn in Resources */,
 				18D775D822AD963800AE281E /* LaunchScreen.storyboard in Resources */,
-				2101772027EBAF5400C37F34 /* star_catalogue.csv in Resources */,
+				21205ED127F7893A00E3C933 /* stardata.csv in Resources */,
 				18D775C722AD944400AE281E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

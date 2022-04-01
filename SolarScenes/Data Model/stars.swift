@@ -33,37 +33,41 @@
 import Foundation
 
 struct stars_coordinates: Identifiable {
-  var ra: String = ""
-  var dec: String = ""
-  var type: String = ""
-  var const: String = ""
-  var mag: String = ""
-  var name: String = ""
-  var rarad: String = ""
-  var decrad: String = ""
-  var ID: String = ""
-  var r1: String = ""
-  var r2: String = ""
-  var angle: String = ""
-  var dsoSource: String = ""
-  var id1: String = ""
-  var cat1: String = ""
-  var id2: String = ""
-  var cat2: String = ""
-  var dupid: String = ""
-  var dupcat: String = ""
-  var displayMag: String = ""
-  var id = UUID()
   
+  var id = UUID()
+  var StarID: String = ""
+  var Hip: String = ""
+  var HD: String = ""
+  var HR: String = ""
+  var Gliese: String = ""
+  var BayerFlamsteed: String = ""
+  var ProperName: String = ""
+  var RA: String = ""
+  var Dec: String = ""
+  var Distance: String = ""
+  var Mag: String = ""
+  var AbsMag: String = ""
+  var Spectrum: String = ""
+  var ColorIndex: String = ""
+
   init(raw: [String]) {
-    ra = raw[0]
-    dec = raw[1]
-    type = raw[2]
-    const = raw[3]
-    mag = raw[4]
-    name = raw[5]
-    rarad = raw[6]
-    decrad = raw[7]
+    StarID = raw[0]
+    Hip = raw[1]
+    HD = raw[2]
+    HR = raw[3]
+    Gliese = raw[4]
+    BayerFlamsteed = raw[5]
+    ProperName = raw[6]
+    RA = raw[7]
+    Dec = raw[8]
+    Distance = raw[9]
+    Mag = raw[10]
+    AbsMag = raw[11]
+    Spectrum = raw[12]
+    ColorIndex = raw[13]
+
+  
+  
   }
   
 }

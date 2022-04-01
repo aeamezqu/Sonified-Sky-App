@@ -98,7 +98,7 @@ struct ContentView: View {
    
     
     ZStack {
-      ARViewContainer()
+      //ARViewContainer()
         
       SceneView(
         
