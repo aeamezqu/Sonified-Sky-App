@@ -299,9 +299,9 @@ let timer = Timer.scheduledTimer(withTimeInterval: dt, repeats: true) {timer in
         let RA = right_ascension[i]
         let Dec = declination[i]
         positions[i] = starCoordinates(RA: RA, Dec: Dec, latitude: latitude, LMST: LMST)
+        print(positions[0])
     }
 }
-print("change")
 
 
 
